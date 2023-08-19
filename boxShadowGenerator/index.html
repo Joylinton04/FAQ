@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="display-content loading">
+                <div class="box-color"></div>
+            </div>
+            <div class="options loading">
+                <ul>
+                    <li>
+                        <label>x offset:</label>
+                        <input type="range" value="0" min="-20" max="50" id="x offset">
+                    </li>
+                    <li>
+                        <label for="y">y offset:</label>
+                        <input type="range" value="0" min="-20" max="50" id="y offset">
+                    </li>
+                    <li>
+                        <label>blur radius:</label>
+                        <input type="range" value="0" max="50" id="blur">
+                    </li>
+                    <li>
+                        <label>spread radius:</label>
+                        <input type="range" value="0" max="50" id="spread">
+                    </li>
+                </ul>
+                <div class="color">
+                    <span>shadow color:</span><span><input type="color" id="color"></span>
+                </div>
+            </div>
+            <div class="value loading">
+                <input type="text" id="text">
+                <span id="copy">copy style</span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
